@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+<title>Hobbies</title>
+</head>
+<ion-app>
+    <ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size='4'></ion-col>
+            <ion-col size='4'>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title>Academic Details</ion-card-title>
+                        
+                    </ion-card-header>
+                <ion-card-content>
+                   <ion-item color='dark'><ion-label >10</ion-label><ion-label>{{p1}}</ion-label>
+                   <ion-label><ion-avatar><ion-img src='https://assets.thehansindia.com/h-upload/2019/09/10/214541-bs.webp'></ion-img></ion-avatar></ion-label></ion-item>
+                    <ion-item><ion-label >Intermediate</ion-label><ion-label>{{p2}}</ion-label>
+                    <ion-label><ion-avatar><ion-img src='https://timesofindia.indiatimes.com/thumb/msid-63743144,width-1200,height-900,resizemode-4/.jpg'></ion-img></ion-avatar></ion-label>
+                    </ion-item>
+                     <ion-item color='dark'><ion-label >BCA</ion-label><ion-label>{{p3}}</ion-label>
+                     <ion-label><ion-avatar><ion-img src='https://animationvisarts.com/wp-content/uploads/2016/10/LPU-Logo-Design.jpg'></ion-img></ion-avatar></ion-label>
+                     </ion-item>
+                </ion-card-content>
+                </ion-card>
+              </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+</ion-app>
+
+</html>
