@@ -5,7 +5,7 @@ app.use(express.static(__dirname+'/public'));
 app.set('view engine','hbs');
 
 app.get('/',(req,res) => {
-res.send('<h1>hello express and hbs</h1>');
+res.send('<h1>hello  hii hiiexpress and hbs</h1>');
 
 });
 app.get('/contact',(req,res) => {
