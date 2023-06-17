@@ -1,11 +1,15 @@
 const express=require('express');
 const port=process.env.PORT || 2002;
+const hbs=require('hbs');
 var app=express();
 app.use(express.static(__dirname+'/public'));
 app.set('view engine','hbs');
-
+hbs.registerPartials(__dirname+'/views/partials');
 app.get('/',(req,res) => {
-res.send('<h1>hello  hii hiiexpress and hbs</h1>');
+    res.render('home.hbs',{
+        pageTitle:'Home Page',
+        yr: new Date().getFullYear()
+    });
 
 });
 app.get('/contact',(req,res) => {
